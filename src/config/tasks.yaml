@@ -1,0 +1,53 @@
+manager_task:
+  description: >
+    This task involves receiving the user's request: {user_input} and subsequently breaking it down into logical, organized steps. 
+    The next step is to assign each of these steps to the most suitable specialists for each case.
+
+  expected_output: >
+    The manager's expected output must be a detailed, structured plan that outlines the received request, the organized
+    steps and the specialist assignment, just as a rationale section that provides a brief explanation of why
+    each specialist was chosen for their respective task including their specific roles and tasks.
+
+researcher_task:
+  description: >
+    This task involves receiving requests from specialists and providing answers based on thorough internet research.
+
+  expected_output: >
+    A comprehensive text containing all the essential details to accurately respond to the specialists' requests.
+    
+historySpecialist_task:
+  description: >
+   This task involves receiving requests of you specialist field (History) from the manager and providing the most relevant context and questions 
+   to the researcher. This ensures that the researcher has the best possible understanding to conduct thorough research and gather the necessary 
+   information. The gathered information will then be used by the writer to accurately answer the user's question.
+  expected_output: >
+    The expected output of this task must be a well-organized brief that includes:
+    1. Request Summary: a clear summary of the manager's request.
+    2. Context Details: relevant background information and context to guide the research.
+    3. Specific Questions: a list of specific questions or areas of focus that the researcher should adress.
+
+writer_task:
+  description: >
+    This task involves receiving the user's input and the research results (which may include multiple research findings) 
+    from the researcher agent, and then providing the most accurate and comprehensive answer possible. 
+  expected_output: >
+    The expected output of the writer task must be a well-crafted response that includes:
+    1. Clear Answer: a concise and accurate answer to the user's question based on the research results.
+    2. Comprehensive Explanation: a detailed explanation that thoroughly addresses all aspects of the user's input.
+    3. Cited Sources: Proper citation of all sources used in the research to ensure credibility and transparency.
+    4. Organized Format: A well-organized structure that makes the information easy to read and understand.
+    5. Additional Insights: Any additional relevant insights or information that could further help the user.
+
+reviser_task:
+  description: >
+    This task involves receiving the article provided by the writer along with the user's input and ensuring that all questions are answered with the highest 
+    accuracy and objectivity. Additionally, the reviser must verify that all sources are properly cited and the information is presented in a clear and organized manner.
+
+  expected_output: >  
+    The expected output of the reviser task must be a thoroughly reviewed and polished document that includes:
+    1. Accuracy Check: Verification that all the information provided is accurate and correctly answers the user's questions.
+    2. Objectivity Assessment: Ensuring that the content is objective and unbiased.
+    3. Source Verification: Confirmation that all sources are properly cited and credible.
+    4. Clarity and Readability: Enhancements to ensure the text is clear, concise, and easy to read.
+    5. Final Polishing: Correcting any grammatical, spelling, or formatting errors to produce a professional-quality document.
+
